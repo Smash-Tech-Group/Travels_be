@@ -1,4 +1,4 @@
-# FASTAPI
+# TRAVELS BACKEND FASTAPI
 Travels FastAPI boilerplate
 
 ## Setup
