@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome to Smash Travels{% endblock %}
+
+{% block content %}
+<table role="presentation" width="100%" style="padding: 1rem 2rem;">
+  <tr>
+    <td>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <div style="display: inline-block; height: 370px; width: 330px; overflow: hidden; background-size: cover;">
+          <img src="https://smashtravels.com/assets/SmashTravelsDesign-BRmvjUf4.jpg" alt="image" style="height: 100%; width: 100%;">
+        </div>
+        <h1 style="font-size: 1.5rem; color: #0A0A0A; font-weight: 600;">
+          Smash Travels: Your Trusted Partner for Work Visas, Local Flight Bookings, and Unforgettable Travel Experiences.
+        </h1>
+      </div>
+
+      <div>
+        <p style="color: #111; font-size: 1.125rem; font-weight: 600;">Hi {{user.first_name}} {{user.last_name}},</p>
+        <p style="color: rgba(17, 17, 17, 0.9); font-weight: 400; font-size: 1rem;">
+          We’re excited to introduce you to Smash Travels, your one-stop solution for seamless travel experiences. 
+          Whether you're looking to process a work visa, book flights, or renew your passport, we've got you covered!
+        </p>
+      </div>
+
+      <div style="margin-bottom: 1.75rem;">
+        <h3 style="color: #0A0A0A; font-weight: 600;">Here's what we offer:</h3>
+        <div style="margin-bottom: 1.25rem;">
+          <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 1rem;">
+              <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+              <b>Work Visa Processing:</b> Secure your work permit hassle-free with our expert assistance.
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+              <b>Local & International Flight Bookings:</b> Book flights at the best rates for a smooth travel experience.
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+              <b>Passport Processing & Renewal:</b> Need a new passport or renewal? We’ll handle the process for you.
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+              <b>Airport Pickups:</b> Enjoy a stress-free arrival with our airport pickup services.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="{{cta_link}}" style="display: block; width: fit-content; padding: 0.5rem 2.5rem; background-color: #F97316; color: white; text-decoration: none; border-radius: 0.5rem; margin: 0 auto; text-align: center;">
+        Learn More About Us
+      </a>
+
+      <div style="margin-top: 2rem;">
+        <p>Regards,</p>
+        <p>The Smash Travels Team</p>
+      </div>
+    </td>
+  </tr>
+</table>
+{% endblock %}
