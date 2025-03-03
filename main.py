@@ -33,7 +33,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     lifespan=lifespan,
-    title='Tifi.TV API'
+    title='smashtravel.com API'
 )
 
 # Set up email templates and css static files
@@ -55,8 +55,8 @@ app.mount('/tmp/media', StaticFiles(directory=TEMP_DIR), name='tmp-media')
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://smashtravels.com/",
-    "https://www.smashtravels.com/"
+    "https://smashtravels.com",
+    "https://www.smashtravels.com"
 ]
 
 
@@ -79,6 +79,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 
